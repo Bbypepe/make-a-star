@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "make-a-star"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "make-a-star-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
